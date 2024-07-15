@@ -1,5 +1,3 @@
-
-
 //your JS code here. If required.
 function removeArticles(name) {
   const articles = ["a", "an", "the"];
@@ -9,7 +7,8 @@ function removeArticles(name) {
     }
   }
   return name;
-	
+}
+
 function updateWebPage(bands) {
   const ul = document.getElementById("bands");
   bands.forEach((element) => {
@@ -19,8 +18,23 @@ function updateWebPage(bands) {
   });
 }
 
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
+const bands = [
+  "The Plot in You",
+  "The Devil Wears Prada",
+  "Pierce the Veil",
+  "Norma Jean",
+  "The Bled",
+  "Say Anything",
+  "The Midway State",
+  "We Came as Romans",
+  "Counterparts",
+  "Oh, Sleeper",
+  "A Skylit Drive",
+  "Anywhere But Here",
+  "An Old Dog",
+];
 
 bands.sort((a, b) => removeArticles(a).localeCompare(removeArticles(b)));
 
 updateWebPage(bands);
+
